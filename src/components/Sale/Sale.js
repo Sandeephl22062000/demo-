@@ -1,21 +1,26 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core'
 import Container from "../Global/Container";
-import Button from "../Global/Button/Button";
-
+import Button1 from "../Global/Button/Button";
+import {Button } from "@mui/material"
 // Background Image
 import SaleBg from "../../images/Sale.png";
+import { useNavigate } from 'react-router-dom';
 
 const Sale = () => {
+    const navigate= useNavigate()
+    const handleClick = () =>{
+        navigate("/food")
+    }
     return (
         <section className="saleSection" css={styles}>
             <Container>
                 <div className="wrapper">
-                    <h3>A BIG OFFER FOR<br></br>
-                    THIS SUMMER</h3>
-                    <h2>50% Off</h2>
-                    <p>There are many variations of passages of lorem Ipsum available but the majority have suffered alteration.</p>
-                    <Button />
+                    <h2>Eat Your Protein</h2>
+                    <h3>50% Off</h3>
+                    <h3>Track your Calories,Nutrients and Micros according to your Goals.</h3>
+                    <p>Calucalate the amount of calorie you need to achieve your goals</p>
+                    <Button sx={{padding:"20px",color:"white",bgcolor:"red"}} onClick={handleClick}>Calculate</Button>
                 </div>
             </Container>
         </section>

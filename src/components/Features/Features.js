@@ -7,20 +7,24 @@ import Features1 from "../../images/features1.svg";
 import Features2 from "../../images/features2.svg";
 import Features3 from "../../images/features3.svg";
 import Features4 from "../../images/features4.svg";
+import { Card } from '@mui/material';
 
 const Features = () => {
     return (
-        <section className="features" css={styles}>
-            <Container>
-                <Heading title="OUR FEATURES" info="There are many variations of passages of lorem Ipsum available, but the majority have suffered alteration." />
-                <div className="featureWrapper">
-                    <FeaturesCard featureImg={Features1} featureHeading="Weightlifting" featureInfo="There are many variations of passages of lorem Ipsum available." />
-                    <FeaturesCard featureImg={Features2} featureHeading="Specific Muscles" featureInfo="There are many variations of passages of lorem Ipsum available." />
-                    <FeaturesCard featureImg={Features3} featureHeading="Flex Your Muscles" featureInfo="There are many variations of passages of lorem Ipsum available." />
-                    <FeaturesCard featureImg={Features4} featureHeading="Cardio Exercises" featureInfo="There are many variations of passages of lorem Ipsum available." />
-                </div>
-            </Container>
-        </section>
+        <Container>
+            <Card>fe</Card>
+        </Container>
+        // <section className="features" css={styles}>
+        //     <Container>
+        //         <Heading title="OUR PROGRAMS" info="We Offer you wide choices of programs" />
+        //         <div className="featureWrapper">
+        //             <FeaturesCard featureImg={Features1} featureHeading="Workout with Our Experts" featureInfo="Interact with our experts one on one and get Full support" />
+        //             <FeaturesCard featureImg={Features2} featureHeading="Workout without trainer" featureInfo=" " />
+        //             <FeaturesCard featureImg={Features3} featureHeading="Flex Your Muscles" featureInfo="There are many variations of passages of lorem Ipsum available." />
+        //             <FeaturesCard featureImg={Features4} featureHeading="Cardio Exercises" featureInfo="There are many variations of passages of lorem Ipsum available." />
+        //         </div>
+        //     </Container>
+        // </section>
     )
 }
 

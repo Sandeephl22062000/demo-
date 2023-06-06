@@ -29,10 +29,12 @@ const Navbar = () => {
 
 const styles = css`
   width: 100%;
+  height:100px
   position: absolute;
   top: 0;
   z-index: 10;
   padding: 40px 0;
+  background-color: black;
   .container {
     max-width: 1200px;
     display: flex;

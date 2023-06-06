@@ -3,12 +3,12 @@ import { jsx, css } from "@emotion/core";
 
 const Menu = ({ openMenu }) => (
     <div css={styles} className={openMenu ? "menu" : "hidden"}>
-        <a href="#home">home</a>
-        <a href="#about">about</a>
-        <a href="#pricing">pricing</a>
-        <a href="#gallery">gallery</a>
-        <a href="#pages">pages</a>
-        <a href="#blog">blog</a>
+        <a href="/">home</a>
+        <a href="/food">Food</a>
+        <a href="#pricing">Exercise</a>
+        <a href="#gallery">Challenges</a>
+        <a href="#pages">Trainers</a>
+        <a href="#blog">About</a>
         <a href="#contact">contact</a>
     </div>
 );

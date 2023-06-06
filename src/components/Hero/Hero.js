@@ -25,7 +25,8 @@ const styles = css`
   min-height: 100vh;
   display: flex;
   align-items: center;
-  ${'' /* background: url('${HeroImage}') no-repeat center/cover; */}
+  background-color:#33475b;
+  background: url('${HeroImage}') no-repeat center/cover;
   position: relative;
   .overlay {
       position: absolute;
